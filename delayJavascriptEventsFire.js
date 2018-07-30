@@ -6,3 +6,15 @@
         }, function(){
          clearTimeout(setTimeoutConst );
      });
+//OR
+
+$('.className').on({
+    'mouseover': function () {
+        setTimeoutConst = setTimeout(function () {
+            // routine work or anything
+        }, delay);
+    },
+    'mouseout' : function () {
+        clearTimeout(setTimeoutConst);
+    }
+});
