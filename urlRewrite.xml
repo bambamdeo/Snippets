@@ -12,7 +12,7 @@
                   <action type="Redirect" url="https://www.mysite.com/{R:1}" appendQueryString="true" redirectType="Permanent" />
                 </rule>
                 <!-- Redirect all https to http  (Tested)-->
-                <rule name="Redirect to http" stopProcessing="true">
+                <rule name="Redirect to http" enabled="true"  stopProcessing="true">
                     <match url="(.*)" />
                     <conditions>
                         <add input="{HTTP}" pattern="off" ignoreCase="true" />
@@ -48,7 +48,7 @@
                 </rule>
                 <!-- Redirect all non-www to www  -->
                 <!-- Not Working -->
-                <rule name="Redirect top domains with non-www to www" stopProcessing="true">
+                <rule name="Redirect top domains with non-www to www" enabled="true" stopProcessing="true">
                     <match url="(.*)" />
                     <conditions logicalGrouping="MatchAll" trackAllCaptures="false">
                         <add input="{HTTP_HOST}" pattern=".*localhost.*" negate="true" />
