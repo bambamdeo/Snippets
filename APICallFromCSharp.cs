@@ -15,7 +15,7 @@
 
 		
 		
-public Response CallUsingPOSTRequest(string abc)
+public Response CallUsingPOSTRequest(object abc)
         {
             Response obj = new Response();
             try
