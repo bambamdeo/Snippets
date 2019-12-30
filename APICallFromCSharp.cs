@@ -15,7 +15,7 @@
 
 		
 		
-		public Response CallUsingPOSTRequest(string abc)
+public Response CallUsingPOSTRequest(string abc)
         {
             Response obj = new Response();
             try
@@ -39,7 +39,7 @@
         }
 
 		
-		public Response CallUsingGETRequest(DateTime LastDateTime)
+public Response CallUsingGETRequest(DateTime LastDateTime)
         {            
             Response objresponse = new Response();
             try
