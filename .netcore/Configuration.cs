@@ -19,7 +19,10 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerF
 // app.UseStatusCodePagesWithRedirects("~/errors/{0}"); // PathBase relative
 // app.UseStatusCodePagesWithRedirects("/base/errors/{0}"); // Absolute
 
- 
+// app.UseDeveloperExceptionPage()
+// app.UseDatabaseErrorPage()
+// app.UseExceptionHandler()
+
   
   ////Use vs Run
    app.Use(async (context, next) =>
